@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "YAMAZAKI 12 YEARS",
+    "price": 28000,
+    "isHot": true,
+    "image": "https://images.unsplash.com/photo-1582737517869-bc91b0973a94"
+  },
+  {
+    "id": 2,
+    "name": "HIBIKI HARMONY",
+    "price": 15000,
+    "isHot": false,
+    "image": "https://images.unsplash.com/photo-1599307767316-776533bb941c"
+  }
+]
