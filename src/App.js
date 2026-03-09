@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './App.css'; 
-// JSON 파일 경로를 확인하세요! (src/data/products.json 에 있어야 합니다)
 import initialData from './data/products.json'; 
 
 function App() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    // 앱이 실행되면 JSON 데이터를 state에 저장합니다.
     setProducts(initialData);
   }, []);
 
