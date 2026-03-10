@@ -50,6 +50,40 @@ function App() {
       {/* 후기 섹션 추가 */}
 {/* 배송 프로세스 섹션 */}
 <section className="process-section" id="process">
+{/* 2. 이용 안내 & FAQ 섹션 */}
+<section className="guide-section" id="guide">
+  <h2 className="section-title">💡 이용 안내 & FAQ</h2>
+  <div className="guide-container">
+    <div className="guide-item">
+      <h4>Q. 배송 기간은 얼마나 걸리나요?</h4>
+      <p>결제 완료 후 일본 현지 바잉 및 발송까지 평일 기준 5~7일, 통관을 거쳐 수령까지 총 10일 내외가 소요됩니다.</p>
+    </div>
+    <div className="guide-item">
+      <h4>Q. 관부가세는 포함된 가격인가요?</h4>
+      <p>아니요. 주류 특성상 관세청 안내에 따라 고객님이 직접 납부하셔야 합니다. (150달러 이하 1병까지는 면세 혜택이 있을 수 있으나 주세/교육세는 발생할 수 있습니다.)</p>
+    </div>
+    <div className="guide-item">
+      <h4>Q. 개인통관고유부호가 무엇인가요?</h4>
+      <p>해외 물품 수입 시 본인 확인을 위한 번호입니다. 관세청 유니패스 사이트에서 본인 인증 후 즉시 발급 가능합니다.</p>
+    </div>
+  </div>
+</section>
+
+{/* 3. 취소 및 환불 규정 섹션 */}
+<section className="policy-section" id="policy">
+  <h2 className="section-title">🛡️ 취소 및 환불 규정</h2>
+  <div className="policy-card">
+    <div className="policy-item">
+      <strong>1. 주문 취소:</strong> 일본 현지에서 상품 구매가 완료된 이후에는 단순 변심으로 인한 취소가 불가합니다.
+    </div>
+    <div className="policy-item">
+      <strong>2. 파손 보상:</strong> 배송 중 파손이 발생한 경우, <strong>택배 박스를 개봉하는 영상</strong>과 함께 연락 주시면 100% 환불 또는 재발송해 드립니다.
+    </div>
+    <div className="policy-item">
+      <strong>3. 반품 및 교환:</strong> 해외 배송 특성상 단순 변심에 의한 반품 시 왕복 국제 운송료가 청구되오니 신중한 구매 부탁드립니다.
+    </div>
+  </div>
+</section>
   <h2 className="section-title">📦 배송 프로세스</h2>
   <div className="process-container">
     <div className="process-step">
