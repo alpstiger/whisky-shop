@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "user": "위스키러버",
+    "product": "야마자키 12년",
+    "rating": 5,
+    "content": "포장이 정말 꼼꼼하게 와서 놀랐습니다. 일본 직구인데도 배송이 빨라요!",
+    "images": [
+      "https://images.unsplash.com/photo-1582737517276-7ca327cd19bc",
+      "https://images.unsplash.com/photo-1508253573934-c2c6d99679b9"
+    ],
+    "date": "2024-03-10"
+  }
+]
