@@ -48,6 +48,37 @@ function App() {
       </div>
 
       {/* 후기 섹션 추가 */}
+{/* 배송 프로세스 섹션 */}
+<section className="process-section" id="process">
+  <h2 className="section-title">📦 배송 프로세스</h2>
+  <div className="process-container">
+    <div className="process-step">
+      <div className="step-number">01</div>
+      <h4>현지 바잉</h4>
+      <p>일본 현지 공식 리쿼샵에서 직접 정품을 구매합니다.</p>
+    </div>
+    <div className="process-step">
+      <div className="step-number">02</div>
+      <h4>안심 검수</h4>
+      <p>병 상태와 패키지를 확인하고 꼼꼼히 검수합니다.</p>
+    </div>
+    <div className="process-step">
+      <div className="step-number">03</div>
+      <h4>특수 완충 포장</h4>
+      <p>위스키 전용 에어캡으로 파손 걱정 없이 포장합니다.</p>
+    </div>
+    <div className="process-step">
+      <div className="step-number">04</div>
+      <h4>국제 항공 운송</h4>
+      <p>가장 빠른 항공편을 통해 한국으로 발송합니다.</p>
+    </div>
+    <div className="process-step">
+      <div className="step-number">05</div>
+      <h4>통관 및 국내배송</h4>
+      <p>안전하게 통관 후 집 앞까지 배송해 드립니다.</p>
+    </div>
+  </div>
+</section>
       <section className="review-section" id="reviews">
         <h2>실시간 구매 후기</h2>
         <div className="review-grid">

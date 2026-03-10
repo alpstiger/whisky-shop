@@ -87,3 +87,53 @@
 .review-header { display: flex; justify-content: space-between; margin-bottom: 5px; }
 .review-user { font-weight: bold; color: #333; }
 .review-date { font-size: 0.8rem; color: #999; }
+
+.process-section {
+  padding: 60px 20px;
+  background: #1a1a1a; /* 어두운 톤으로 신뢰감 강조 */
+  color: #fff;
+  border-radius: 20px;
+  margin: 40px 0;
+}
+
+.process-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap; /* 모바일 대응 */
+}
+
+.process-step {
+  flex: 1;
+  min-width: 150px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  position: relative;
+}
+
+.step-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #d32f2f;
+  margin-bottom: 10px;
+}
+
+.process-step h4 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.process-step p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #ccc;
+}
+
+/* 태블릿/모바일에서는 2열로 나오게 */
+@media (max-width: 768px) {
+  .process-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
