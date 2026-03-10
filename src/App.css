@@ -51,3 +51,26 @@
   border: none; 
   cursor: pointer; 
 }
+.exchange-info {
+  background: #f4f4f4;
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  color: #666;
+}
+
+.price-jpy {
+  font-size: 1.1rem;
+  color: #888;
+  margin-bottom: 2px;
+  text-decoration: none;
+}
+
+.price-krw {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #d32f2f; /* 붉은색으로 강조 */
+  margin-bottom: 15px;
+}
