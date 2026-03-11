@@ -1,139 +1,42 @@
-/* 기본 레이아웃 */
-.shop-container { 
-  padding: 20px; 
-  max-width: 1000px; 
-  margin: 0 auto; 
-  font-family: sans-serif; 
-}
+/* 전체 레이아웃 */
+.shop-container { max-width: 1200px; margin: 0 auto; font-family: 'Noto Sans KR', sans-serif; }
 
-/* 상단 메뉴바 - 에러 났던 부분 수정 완료 */
-.shop-nav { 
-  text-align: center; 
-  margin-bottom: 20px; 
-  position: -webkit-sticky; /* 사파리 브라우저용 */
-  position: sticky;         /* 상단 고정 */
-  top: 0; 
-  background: white; 
-  padding: 10px; 
-  z-index: 100; 
-  border-bottom: 1px solid #eee;
-}
+.main-header { display: flex; justify-content: space-between; align-items: center; padding: 30px 0; border-bottom: 2px solid #222; }
+.logo { font-size: 24px; font-weight: 900; color: #1a4d2e; } /* 드렁큰몽키 특유의 초록색 느낌 */
+.logo span { color: #888; font-size: 14px; }
 
-.shop-nav a { 
-  margin: 0 15px; 
-  text-decoration: none; 
-  color: #333; 
-  font-weight: bold; 
-}
+.search-bar { display: flex; border: 1px solid #ddd; border-radius: 20px; padding: 5px 15px; }
+.search-bar input { border: none; outline: none; width: 250px; }
+.search-bar button { border: none; background: none; cursor: pointer; }
 
-.shop-header { 
-  text-align: center; 
-  margin-bottom: 40px; 
-}
+/* 메인 영역 구도 */
+.main-content { display: flex; margin-top: 30px; gap: 40px; }
 
-/* 환율 정보 */
-.exchange-info {
-  background: #f4f4f4;
-  display: inline-block;
-  padding: 5px 15px;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  margin-top: 10px;
-  color: #666;
-}
+/* 좌측 사이드바 */
+.sidebar { width: 200px; text-align: left; }
+.sidebar h3 { font-size: 18px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+.sidebar ul { list-style: none; padding: 0; }
+.sidebar li { padding: 10px 0; color: #555; cursor: pointer; border-bottom: 1px solid #f9f9f9; }
+.sidebar li:hover { color: #1a4d2e; font-weight: bold; }
+
+.exchange-box { background: #f4f4f4; padding: 15px; margin-top: 30px; border-radius: 10px; text-align: center; }
 
 /* 상품 그리드 */
-.product-grid { 
-  display: grid; 
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
-  gap: 20px; 
-}
+.product-section { flex: 1; }
+.product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 25px; }
 
-.product-card { 
-  border: 1px solid #ddd; 
-  border-radius: 8px; 
-  overflow: hidden; 
-  transition: 0.3s; 
-}
+.product-card { border: 1px solid #eee; position: relative; transition: 0.3s; }
+.product-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+.badge { position: absolute; top: 10px; left: 10px; background: #d32f2f; color: white; padding: 2px 8px; font-size: 11px; }
 
-.product-card img { 
-  width: 100%; 
-  height: 200px; 
-  object-fit: cover; 
-}
+.p-info { padding: 15px; text-align: left; }
+.p-jpy { color: #999; text-decoration: underline; font-size: 13px; }
+.p-krw { font-size: 18px; font-weight: bold; color: #222; margin: 5px 0; }
+.buy-btn { width: 100%; background: #222; color: white; border: none; padding: 10px; cursor: pointer; }
 
-.product-info { padding: 15px; }
-
-.price-jpy { color: #888; margin-bottom: 2px; }
-.price-krw { font-size: 1.2rem; font-weight: bold; color: #d32f2f; margin-bottom: 15px; }
-
-.buy-button { 
-  width: 100%; 
-  padding: 10px; 
-  background: #000; 
-  color: #fff; 
-  border: none; 
-  cursor: pointer; 
-  border-radius: 4px;
-}
-
-/* 구매 후기 섹션 */
-.review-section { margin-top: 80px; padding-top: 40px; border-top: 2px solid #eee; }
-.review-container { display: grid; gap: 20px; }
-.review-card { background: #f9f9f9; padding: 20px; border-radius: 12px; text-align: left; }
-.review-images { display: flex; gap: 10px; margin-bottom: 15px; overflow-x: auto; }
-.review-img { width: 120px; height: 120px; object-fit: cover; border-radius: 8px; flex-shrink: 0; }
-.review-text { font-size: 1.1rem; line-height: 1.6; margin-bottom: 10px; }
-.review-header { display: flex; justify-content: space-between; margin-bottom: 5px; }
-.review-user { font-weight: bold; color: #333; }
-.review-date { font-size: 0.8rem; color: #999; }
-
-.process-section {
-  padding: 60px 20px;
-  background: #1a1a1a; /* 어두운 톤으로 신뢰감 강조 */
-  color: #fff;
-  border-radius: 20px;
-  margin: 40px 0;
-}
-
-.process-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 15px;
-  flex-wrap: wrap; /* 모바일 대응 */
-}
-
-.process-step {
-  flex: 1;
-  min-width: 150px;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  position: relative;
-}
-
-.step-number {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #d32f2f;
-  margin-bottom: 10px;
-}
-
-.process-step h4 {
-  font-size: 1.1rem;
-  margin-bottom: 8px;
-}
-
-.process-step p {
-  font-size: 0.85rem;
-  line-height: 1.4;
-  color: #ccc;
-}
-
-/* 태블릿/모바일에서는 2열로 나오게 */
-@media (max-width: 768px) {
-  .process-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
+/* 우측 퀵 메뉴 */
+.floating-menu { position: fixed; right: 30px; bottom: 50px; display: flex; flex-direction: column; gap: 10px; }
+.float-btn { width: 50px; height: 50px; border-radius: 50%; border: none; color: white; font-size: 20px; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+.kakao { background: #fee500; color: #3c1e1e; }
+.insta { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+.top { background: #333; }
