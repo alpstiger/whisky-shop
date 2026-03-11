@@ -34,10 +34,7 @@ function App() {
         <div className="search-bar">
           <input type="text" placeholder="검색어를 입력하세요..." />
           <button>🔍</button>
-        </div>
-      </header>
-
-      {/* 상단 카테고리 메뉴 */}
+             {/* 상단 카테고리 메뉴 */}
       <nav className="top-nav">
         <ul>
           <li>일본 위스키</li>
@@ -48,6 +45,10 @@ function App() {
           <li>오늘의 환율: 100¥ = 915원</li>
         </ul>
       </nav>
+        </div>
+      </header>
+
+   
 
       <div className="main-content">
         {/* 특별 주문 배너 */}
