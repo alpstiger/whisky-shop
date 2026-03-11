@@ -40,3 +40,41 @@
 .kakao { background: #fee500; color: #3c1e1e; }
 .insta { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
 .top { background: #333; }
+
+.special-order-banner {
+  background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+  color: #d4af37; /* 골드 포인트 컬러 */
+  padding: 25px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  border: 1px solid #d4af37;
+  text-align: left;
+}
+
+.banner-content h3 { margin: 0 0 10px 0; font-size: 1.4rem; }
+.banner-content p { margin: 2px 0; color: #eee; font-size: 0.95rem; }
+
+.inquiry-btn {
+  background: #d4af37;
+  color: #000;
+  border: none;
+  padding: 15px 25px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.inquiry-btn:hover {
+  background: #fff;
+  transform: scale(1.05);
+}
+
+/* 모바일 대응 */
+@media (max-width: 768px) {
+  .special-order-banner { flex-direction: column; text-align: center; gap: 20px; }
+}

@@ -35,7 +35,15 @@ function App() {
             <strong>100¥ = 915원</strong>
           </div>
         </aside>
-
+{/* 경매 및 특별 주문 안내 배너 */}
+<div className="special-order-banner">
+  <div className="banner-content">
+    <h3>🔍 찾으시는 위스키가 없나요?</h3>
+    <p>야후옥션, 메르카리 입찰 대행부터 현지 희귀 보틀 탐색까지!</p>
+    <p><strong>카톡으로 링크만 보내주시면 실시간 상담 후 낙찰 도와드립니다.</strong></p>
+  </div>
+  <button className="inquiry-btn">1:1 경매 대행 문의</button>
+</div>
         {/* 3. 상품 리스트 영역 */}
         <main className="product-section">
           <div className="product-grid">
