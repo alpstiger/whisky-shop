@@ -12,12 +12,45 @@
 /* 메인 영역 구도 */
 .main-content { display: flex; margin-top: 30px; gap: 40px; }
 
-/* 좌측 사이드바 */
-.sidebar { width: 200px; text-align: left; }
-.sidebar h3 { font-size: 18px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-.sidebar ul { list-style: none; padding: 0; }
-.sidebar li { padding: 10px 0; color: #555; cursor: pointer; border-bottom: 1px solid #f9f9f9; }
-.sidebar li:hover { color: #1a4d2e; font-weight: bold; }
+/* 상단 네비게이션 스타일 */
+.top-nav {
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+
+.top-nav ul {
+  display: flex;
+  justify-content: center; /* 메뉴 중앙 정렬 */
+  list-style: none;
+  padding: 0;
+  gap: 30px; /* 메뉴 사이 간격 */
+}
+
+.top-nav li {
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.top-nav li:last-child {
+  color: #1a4d2e; /* 환율 정보 강조 */
+  background: #f4f4f4;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+/* 기존 사이드바 관련 flex 구조 수정 */
+.main-content {
+  display: block; /* 사이드바가 없으므로 가로 전체 사용 */
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* 상품을 더 크게 배치 */
+  gap: 20px;
+}
 
 .exchange-box { background: #f4f4f4; padding: 15px; margin-top: 30px; border-radius: 10px; text-align: center; }
 
